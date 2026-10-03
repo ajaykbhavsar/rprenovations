@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="9113" height="3881.716" viewBox="0 0 9113 3881.716">
+  <g id="Layer_x0020_1" transform="translate(-1283 -2192.935)">
+    <g id="_1541553444592">
+      <path id="Path_38" data-name="Path 38" d="M1851,2198l1374,426c97,31,186,80,186,176v523h-79V2914c0-80-74-127-157-148L2101,2500c-84-20-158,67-158,149v322H1664V2374C1664,2277,1753,2168,1851,2198ZM3411,4869v454c0,85-73,127-155,163V5343c44-26,76-61,76-112V4869Zm-392,715L1851,6067c-94,39-187-79-187-175V5398c113-50,210-168,279-332v551c0,81,78,177,158,148l918-330Z" fill="#00afef" fill-rule="evenodd"/>
+      <path id="Path_39" data-name="Path 39" d="M1937,4775c0,125-15,227-47,304-99,247-349,400-607,400,244-132,306-234,355-402,14-48,22-113,22-195V3321c0-81-5-136-13-165-9-30-22-53-41-68-20-16-65-42-140-46v-43h671v43c-54,0-102,20-121,30a134.839,134.839,0,0,0-46,39c-11,15-20,38-25,69-5,30-8,77-8,141Z" fill="#f58634"/>
+      <path id="Path_40" data-name="Path 40" d="M3035,5288l205-103v551l-205,103Z" fill="#00afef" fill-rule="evenodd"/>
+      <text id="T" transform="translate(5215 5485)" fill="#fff" font-size="750.98" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">T</tspan></text>
+      <text id="E" transform="translate(5558 5485)" fill="#fff" font-size="750.98" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">E</tspan></text>
+      <text id="C" transform="translate(5997 5485)" fill="#fff" font-size="750.98" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">C</tspan></text>
+      <text id="H" transform="translate(6479 5485)" fill="#fff" font-size="750.98" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">H</tspan></text>
+      <text id="N" transform="translate(6971 5485)" fill="#fff" font-size="750.98" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">N</tspan></text>
+      <text id="O" transform="translate(7461 5485)" fill="#fff" font-size="750.98" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">O</tspan></text>
+      <text id="L" transform="translate(7966 5485)" fill="#fff" font-size="750.98" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">L</tspan></text>
+      <text id="O-2" data-name="O" transform="translate(8357 5485)" fill="#fff" font-size="750.98" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">O</tspan></text>
+      <text id="G" transform="translate(8862 5485)" fill="#fff" font-size="750.98" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">G</tspan></text>
+      <text id="I" transform="translate(9356 5485)" fill="#fff" font-size="750.98" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">I</tspan></text>
+      <text id="E-2" data-name="E" transform="translate(9558 5485)" fill="#fff" font-size="750.98" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">E</tspan></text>
+      <text id="S" transform="translate(9997 5485)" fill="#fff" font-size="750.98" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">S</tspan></text>
+      <text id="Where_your_search_ends" data-name="Where your search ends" transform="translate(3638 3227)" fill="#fff" font-size="895.65" font-family="Gabriola"><tspan x="0" y="0">Where your search ends</tspan></text>
+      <path id="Path_41" data-name="Path 41" d="M3335,4780h151c184,0,334-150,334-336V3730c0-186-150-336-334-336H2469a335.448,335.448,0,0,0-336,336v714a335.448,335.448,0,0,0,336,336h772V4167H3034v403H2469a125.476,125.476,0,0,1-126-126V3730c0-70,56-128,126-128H3486c70,0,126,58,126,128v714a125.476,125.476,0,0,1-126,126H3335Zm1007,0H5359c159,0,289-130,289-289V3763H5438v728a78.532,78.532,0,0,1-79,79H4342c-45,0-80-35-80-79V3763H4053v728C4053,4650,4183,4780,4342,4780Zm1828,0H7476V4570H6170c-45,0-80-35-80-79V4052c0-44,35-79,80-79H7187a78.532,78.532,0,0,1,79,79v115H6182v209H7476V4052c0-159-130-289-289-289H6170c-159,0-289,130-289,289v439C5881,4650,6011,4780,6170,4780Zm1585,0H9015c159,0,289-130,289-289v-35c0-159-130-289-289-289H7998c-45,0-80-35-80-80v-35c0-44,35-79,80-79H9257V3763H7998c-159,0-289,130-289,289v35c0,159,130,289,289,289H9015c45,0,79,37,79,80v35c0,44-34,79-79,79H7755Zm2071,0h520V4570H9826c-45,0-80-35-80-79V3973h507V3763H9746V3532H9537v959C9537,4650,9667,4780,9826,4780Z" fill="#fff"/>
+    </g>
+  </g>
+</svg>
