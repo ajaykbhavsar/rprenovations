@@ -1,0 +1,31 @@
+/***
+Import fonts
+***/
+body {
+	background-image: none !important;
+}
+
+.top {
+	display: none;
+}
+
+.printpage {
+	display: none;
+}
+
+.printshow {
+	min-height: auto !important;
+	background-image: none !important;
+	border-bottom: 0 solid #ddd;
+}
+.header, .headtitle, .checkoutstep, .cartbuttonarea, .hmbtm, .footer, .copytext, .copyright, .top{display:none;}
+.oderbox{border:0px solid #000; float:left; padding:0px 10px;}
+.checkoutbox{border-top:0px!important;}
+.btdnonetdbtm img{height:100px; width:100px;}
+.shoppingcartbox{overflow:hidden;}
+.shoppingcartbox, .commanbox{border-top:1px solid #666!important;}
+.commanbox{width:300px; float:right; position:relative; border:0px solid #000;}
+.commantitle{width:300px; float:right;}
+.table thead{height:40px!important; border:0px solid #000; padding:0px!important; margin:0px!important;}
+.shoppingcartbox table thead td{padding:5px 10px; background:#f2f2f2;}
+
