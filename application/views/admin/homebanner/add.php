@@ -4,15 +4,49 @@
 		return this.optional(element) || /^[a-z ]+$/i.test(value);
 	}, "Letters only please");
 
+	jQuery.validator.addMethod("bannerDimensions", function(value, element)
+	{
+		return this.optional(element) || element.bannerDimensionsValid === true;
+	}, "Banner image must be exactly 1920px X 900px.");
+
+	jQuery.validator.addMethod("bannerExtension", function(value, element)
+	{
+		return this.optional(element) || /\.(jpg|jpeg|png|gif)$/i.test(value);
+	}, "Please select a JPG, JPEG, PNG, or GIF image.");
+
 	$(document).ready(function()
 	{
 		$("#form1").validate(
 		{
 			rules:
 			{
-				firstname:{lettersonly: true},
-				lastname:{lettersonly: true},
-			}
+				banner_image:
+				{
+					required: true,
+					bannerExtension: true,
+					bannerDimensions: true
+				}
+			},
+			messages:
+			{
+				banner_image:
+				{
+					required: "Please select a banner image.",
+					bannerDimensions: "Banner image must be exactly 1920px X 900px."
+				}
+			},
+			errorPlacement: function(error, element)
+			{
+				if (element.attr("name") === "banner_image")
+				{
+					$("#filemsg").empty();
+					error.appendTo("#filemsg");
+				}
+				else
+				{
+					error.insertAfter(element);
+				}
+			},
 		});
 	});
 </script>
@@ -22,6 +56,7 @@
 		$("#errormsg").hide();
 		$("#filemsg").hide();
 		document.forms[0].reset();
+		document.getElementById("banner_image").bannerDimensionsValid = false;
 		var validator = $( "#form1" ).validate();
 		validator.resetForm();
 	}
@@ -151,54 +186,38 @@
 </section>
 <script type="text/javascript">
 	var _URL = window.URL || window.webkitURL;
-	$("#banner_image").change(function(e)
+	$("#banner_image").on("change", function()
 	{
-		var file, img;
-		if((file = this.files[0]))
-		{
-			img = new Image();
-			img.onload = function() 
-			{
-				if(this.width != 1920)
-				{
-					$("#filemsg").show();
-					document.getElementById("filemsg").style.color = "red";
-					$("#filemsg").html('Banner size must be equal to 1920px X 900px');
-					$("#flag").val(false);
-					document.getElementById("banner_image").value = "";
-				}
-				if(this.height != 900)
-				{
-					$("#filemsg").show();
-					document.getElementById("filemsg").style.color = "red";
-					$("#filemsg").html('Banner size must be equal to 1920px X 900px');
-					$("#flag").val(false);
-					document.getElementById("banner_image").value = "";
-				}
-				else
-				{
-					$("#flag").val(true);
-					$("#filemsg").hide();
-				}
-			};
-			img.src = _URL.createObjectURL(file);
-		}
-	});
+		var input = this;
+		input.bannerDimensionsValid = false;
+		$("#filemsg").empty();
 
-	$("#banner_image").change(function() 
-	{
-		var val = $(this).val();
-		switch(val.substring(val.lastIndexOf('.') + 1).toLowerCase())
+		if (!input.files || !input.files[0])
 		{
-			case 'gif': case 'jpg': case 'png': case 'jpeg':
-			$("#filemsg").hide();
-			break;
-			default:
-			$(this).val('');
-			$("#filemsg").show();
-			document.getElementById("filemsg").style.color = "red";
-			$("#filemsg").html('.jpg,.jpeg,.png,.gif Only');
-			break;
+			return;
 		}
+
+		var file = input.files[0];
+		if (!/\.(jpg|jpeg|png|gif)$/i.test(file.name))
+		{
+			$("#filemsg").text("Please select a JPG, JPEG, PNG, or GIF image.");
+			$("#form1").validate().element(input);
+			return;
+		}
+
+		var img = new Image();
+		img.onload = function()
+		{
+			input.bannerDimensionsValid = this.width === 1920 && this.height === 900;
+			$("#form1").validate().element(input);
+			_URL.revokeObjectURL(img.src);
+		};
+		img.onerror = function()
+		{
+			$("#filemsg").text("The selected image could not be read. Please choose another image.");
+			$("#form1").validate().element(input);
+			_URL.revokeObjectURL(img.src);
+		};
+		img.src = _URL.createObjectURL(file);
 	});
 </script>

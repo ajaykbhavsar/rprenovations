@@ -367,7 +367,7 @@ class project_m extends CI_Model
 				'quality'		=> $this->config->item('image_quality'),
 			);
 			$this->load->library('image_lib', $resize_conf);
-			$this->image_lib->clear();	
+			$this->image_lib->clear();
 			$this->image_lib->initialize($resize_conf);
 				
 			if ( ! $this->image_lib->resize())
@@ -377,7 +377,6 @@ class project_m extends CI_Model
 			}
 			else
 			{
-
 				$main_image = $upload_data['file_name'];
 				$flag = TRUE;														 
 			}

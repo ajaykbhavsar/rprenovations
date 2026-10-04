@@ -39,6 +39,13 @@
 								<span> Project</span>
 							</a>
 						</li>
+
+						<li class="<?if($webpagename == "gallery"){?>nav-active<?}?>">
+							<a href="<?=site_url('admins/gallery');?>" class="iconsmall">
+								<img src="<?=site_url('assets/admin/images/icon/new/service.svg')?>"/>
+								<span>Gallery</span>
+							</a>
+						</li>
 						
 						<li class="<?if($webpagename == "cms"){?>nav-active<?}?>">
 							<a href="<?=site_url('admins/cms');?>" class="iconsmall">

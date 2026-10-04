@@ -24,6 +24,7 @@ class Admin_Controller extends CI_Controller
 		$this->load->model('cms_m');
 		$this->load->model('newsletter_m');
 		$this->load->model('project_m');
+		$this->load->model('gallery_m');
 		
 
 		$exception_uris = array(

@@ -10,7 +10,7 @@ class project_fm extends CI_Model
 		$Q = $this->db->GET();
 		return  $Q->result_array();
 	}
-	
+
 	function get_projects_bycategory($category)
 	{ 
 		$this->db->SELECT("*,(select image from tbl_project_image where project_id=tbl_project.id and image!='' limit 1) as image");

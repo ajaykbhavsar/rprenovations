@@ -1,4 +1,4 @@
-<section class="banner-section mt-110 rmt-70">
+<section class="banner-section projectbanner mt-110 rmt-70">
     <div class="container">
         <div class="banner-inner">
             <div class="page-title">

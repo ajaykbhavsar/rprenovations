@@ -41,7 +41,7 @@
 }
 
 .header-info li i {
-  color: #c8bc9c;
+  color: #ef7f1a;
   font-size: 25px;
   margin-right: 25px;
 }
@@ -51,7 +51,7 @@
 }
 
 .header-info li h6 span {
-  color: #c8bc9c;
+  color: #ef7f1a;
   display: block;
   margin-bottom: 8px;
 }
@@ -140,7 +140,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 0 55px 0 20px;
-  border-left: 7px solid #c8bc9c;
+  border-left: 7px solid #00a0e3;
 }
 
 .main-header .logo {
@@ -194,7 +194,7 @@
 
 .main-menu .navigation > li:hover > a,
 .main-menu .navigation > li.current > a {
-  border-top-color: #c8bc9c;
+  border-top-color: #ef7f1a;
   background: #272727;
 }
 

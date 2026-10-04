@@ -9,6 +9,10 @@ class gallery extends Front_Controller {
 
 	function index()
 	{
+		$this->load->model('gallery_fm');
+		$data['gallery_images'] = $this->gallery_fm->get_gallery_images();
+		$data['gallery_categories'] = $this->gallery_fm->get_categories_with_images();
+
 		$data['main'] = 'gallery';
 		$data['websitepagename'] = 'gallery';
 		$this->load->vars($data);
