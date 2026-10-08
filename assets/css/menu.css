@@ -134,7 +134,7 @@
 }
 
 .header-inner {
-  background: #1e1e1e;
+  background: #00a0e3;
   position: relative;
   display: flex;
   align-items: center;
@@ -195,7 +195,7 @@
 .main-menu .navigation > li:hover > a,
 .main-menu .navigation > li.current > a {
   border-top-color: #ef7f1a;
-  background: #272727;
+  background: #0587be;
 }
 
 .main-menu .navigation li .megamenu {

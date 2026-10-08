@@ -11,7 +11,7 @@
 	04. WrodPress Section
 	05. Services Section
 	06. Video Section
-	07. Client Section
+	07. Client Section  
 	08. Rastaurant Section
 	09. Apartment Section
 	10. Success Section
@@ -150,7 +150,7 @@ section {
 }
 .footer-section {
   padding-top: 120px;
-  background-image: url(../images/footer.png);
+  background: #067bac;
 }
 
 header:after,
@@ -1775,7 +1775,7 @@ blockquote {
 
 /*footer bottom*/
 .footer-bottom {
-  background: #191919;
+  background: #04648c;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
